@@ -1,0 +1,12 @@
+<div class="box">
+    <div class="className">
+        {{ className }}
+    </div>
+    <div class="classProperty">
+        <div *ngFor="let property of diagramData">
+            <span *ngFor="let scope of property.modifiers">{{ scope }} </span>
+            <span>{{ property.name }} : </span>
+            <span>{{ property.type }}</span>
+        </div>
+    </div>
+</div>
